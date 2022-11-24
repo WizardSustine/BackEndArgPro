@@ -8,6 +8,7 @@ package com.backendportfolio.BackEnd.Security.Entity;
 import javax.persistence.Entity;
 import com.backendportfolio.BackEnd.Security.Enums.RolNombre;
 import com.sun.istack.NotNull;
+//import java.io.Serializable;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
@@ -19,7 +20,7 @@ import javax.persistence.Id;
  * @author Sustine
  */
 @Entity
-public class Rol {
+public class Rol  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

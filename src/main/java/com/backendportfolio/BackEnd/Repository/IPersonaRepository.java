@@ -1,7 +1,7 @@
 
 package com.backendportfolio.BackEnd.Repository;
 
-import com.backendportfolio.BackEnd.Persona.Persona;
+import com.backendportfolio.BackEnd.Entity.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository
-public interface PersonaRepository extends JpaRepository<Persona, Long>{
+public interface IPersonaRepository extends JpaRepository<Persona, Long>{
     
 }

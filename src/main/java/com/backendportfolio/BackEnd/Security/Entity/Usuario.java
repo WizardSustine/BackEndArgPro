@@ -6,6 +6,7 @@
 package com.backendportfolio.BackEnd.Security.Entity;
 
 import com.sun.istack.NotNull;
+//import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 import javax.persistence.Column;
