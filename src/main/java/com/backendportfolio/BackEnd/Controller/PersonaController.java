@@ -26,6 +26,7 @@ public class PersonaController {
 
     @Autowired IPersonaService iPersonaService;
       
+    
     @GetMapping("/persona/traer")
     public List<Persona> getPersona(){
         return iPersonaService.getPersona();
@@ -47,12 +48,16 @@ public class PersonaController {
     
     @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/persona/editar/{id}")
-    public Persona editPersona(@PathVariable Long id, @RequestParam("nombre") String nuevoNombre, @RequestParam("apellido") String nuevoApellido, @RequestParam("img") String nuevoImg){
+    public Persona editPersona(@PathVariable Long id, @RequestParam("nombre") String nuevoNombre, @RequestParam("apellido") String nuevoApellido, @RequestParam("img") String nuevoImg, @RequestParam("position") String nuevoPosition, @RequestParam("company") String nuevoCompany, @RequestParam("ubicacion") String nuevoUbicacion, @RequestParam("about") String nuevoAbout){
         Persona persona = iPersonaService.findPersona(id);
         
         persona.setNombre(nuevoNombre);
         persona.setApellido(nuevoApellido);
         persona.setImg(nuevoImg);
+        persona.setPosition(nuevoPosition);
+        persona.setCompany(nuevoCompany);
+        persona.setUbicacion(nuevoUbicacion);
+        persona.setAbout(nuevoAbout);
         
         iPersonaService.savePersona(persona);
         return persona;
