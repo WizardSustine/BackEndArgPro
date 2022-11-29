@@ -64,7 +64,7 @@ public class ExpertController {
         if(impExpertService.existsByPosition(expertInterf.getPosition()))
             return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
         
-        Expert expert = new Expert(expertInterf.getPosition(), expertInterf.getCompany(), expertInterf.getImg(), expertInterf.getDescription(), expertInterf.getMode(), expertInterf.getStart(), expertInterf.getEnd(), expertInterf.getTimelapsed(), expertInterf.getCity());
+        Expert expert = new Expert(expertInterf.getPosition(), expertInterf.getCompany(), expertInterf.getImg(), expertInterf.getDescription(), expertInterf.getMode(), expertInterf.getStartt(), expertInterf.getEndd(), expertInterf.getTimelapsed(), expertInterf.getCity());
         impExpertService.save(expert);
         
         return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
@@ -88,8 +88,8 @@ public class ExpertController {
         expert.setImg(expertInterf.getImg());
         expert.setDescription(expertInterf.getDescription());
         expert.setMode(expertInterf.getMode());
-        expert.setStart(expertInterf.getStart());
-        expert.setEnd(expertInterf.getEnd());
+        expert.setStartt(expertInterf.getStartt());
+        expert.setEndd(expertInterf.getEndd());
         expert.setTimelapsed(expertInterf.getTimelapsed());
         expert.setCity(expertInterf.getCity());
                 

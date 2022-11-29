@@ -24,22 +24,22 @@ public class Expert {
     private String img;
     private String description;
     private String mode;
-    private String start;
-    private String end;
+    private String startt;
+    private String endd;
     private String timelapsed;
     private String city;
 
     public Expert() {
     }
 
-    public Expert(String position, String company, String img, String description, String mode, String start, String end, String timelapsed, String city) {
+    public Expert(String position, String company, String img, String description, String mode, String startt, String endd, String timelapsed, String city) {
         this.position = position;
         this.company = company;
         this.img = img;
         this.description = description;
         this.mode = mode;
-        this.start = start;
-        this.end = end;
+        this.startt = startt;
+        this.endd = endd;
         this.timelapsed = timelapsed;
         this.city = city;
     }
@@ -92,20 +92,20 @@ public class Expert {
         this.mode = mode;
     }
 
-    public String getStart() {
-        return start;
+    public String getStartt() {
+        return startt;
     }
 
-    public void setStart(String start) {
-        this.start = start;
+    public void setStartt(String startt) {
+        this.startt = startt;
     }
 
-    public String getEnd() {
-        return end;
+    public String getEndd() {
+        return endd;
     }
 
-    public void setEnd(String end) {
-        this.end = end;
+    public void setEndd(String endd) {
+        this.endd = endd;
     }
 
     public String getTimelapsed() {

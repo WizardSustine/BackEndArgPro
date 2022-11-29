@@ -23,9 +23,9 @@ public class ExpertInterf {
     @NotBlank
     private String mode;
     @NotBlank
-    private String start;
+    private String startt;
     @NotBlank
-    private String end;
+    private String endd;
     @NotBlank
     private String timelapsed;
     @NotBlank
@@ -34,14 +34,14 @@ public class ExpertInterf {
     public ExpertInterf() {
     }
 
-    public ExpertInterf(String position, String company, String img, String description, String mode, String start, String end, String timelapsed, String city) {
+    public ExpertInterf(String position, String company, String img, String description, String mode, String startt, String endd, String timelapsed, String city) {
         this.position = position;
         this.company = company;
         this.img = img;
         this.description = description;
         this.mode = mode;
-        this.start = start;
-        this.end = end;
+        this.startt = startt;
+        this.endd = endd;
         this.timelapsed = timelapsed;
         this.city = city;
     }
@@ -86,20 +86,20 @@ public class ExpertInterf {
         this.mode = mode;
     }
 
-    public String getStart() {
-        return start;
+    public String getStartt() {
+        return startt;
     }
 
-    public void setStart(String start) {
-        this.start = start;
+    public void setStartt(String startt) {
+        this.startt = startt;
     }
 
-    public String getEnd() {
-        return end;
+    public String getEndd() {
+        return endd;
     }
 
-    public void setEnd(String end) {
-        this.end = end;
+    public void setEndd(String endd) {
+        this.endd = endd;
     }
 
     public String getTimelapsed() {
