@@ -46,7 +46,6 @@ public class PersonaController {
         return "La persona fue eliminada correctamente";
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/persona/editar/{id}")
     public Persona editPersona(@PathVariable Long id, @RequestParam("nombre") String nuevoNombre, @RequestParam("apellido") String nuevoApellido, @RequestParam("img") String nuevoImg, @RequestParam("position") String nuevoPosition, @RequestParam("company") String nuevoCompany, @RequestParam("ubicacion") String nuevoUbicacion, @RequestParam("about") String nuevoAbout){
         Persona persona = iPersonaService.findPersona(id);
