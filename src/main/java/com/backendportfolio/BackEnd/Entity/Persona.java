@@ -46,6 +46,6 @@ public class Persona {
     @Size(min = 1, max = 70, message = "no cumple con la longitud")
     private String ubicacion;
     
-    @Size(min = 1, max = 70, message = "no cumple con la longitud")
+    @Size(min = 1, max = 255, message = "no cumple con la longitud")
     private String about;
 }
