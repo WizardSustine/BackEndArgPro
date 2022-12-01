@@ -38,7 +38,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Sustine
  */
 @RestController
-@CrossOrigin
+@CrossOrigin(origins = "https://portfolio-web-argentinap.web.app/")
 public class AuthController {
     @Autowired
     PasswordEncoder passwordEncoder;
